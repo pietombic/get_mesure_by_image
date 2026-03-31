@@ -1,0 +1,93 @@
+:root {
+  --border: #333;
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.canvas-container {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.points-info {
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.distance-result {
+  font-size: 1.4rem;
+  color: #40ff00;
+  background: rgba(64, 255, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 2px solid rgba(64, 255, 0, 0.3);
+  box-shadow: 0 0 15px rgba(64, 255, 0, 0.1);
+}
+
+button {
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+  margin: 5px;
+}
+
+button:disabled {
+  background-color: #333;
+  color: #666;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  background-color: #535bf2;
+  transform: translateY(-1px);
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
+  width: 200px;
+  text-align: center;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: -10px;
+}
